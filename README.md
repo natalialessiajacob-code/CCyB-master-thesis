@@ -14,7 +14,7 @@ University of Zurich, Department of Economics
 
 ## Software
 R version 4.3.1 (2023-06-16)
-codes:
+, codes:
 - tidyverse
 - fixest
 - openxlsx
