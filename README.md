@@ -9,7 +9,7 @@ University of Zurich, Department of Economics
 
 ## Structure
 - `data/` – Raw and processed data
-- `scripts/` – R scripts for analysis
+- `scripts/` – R scripts and AI prompts for analysis
 - `output/` – Tables and figures
 
 ## Software
