@@ -1,0 +1,37 @@
+\begin{table}[htbp]
+\centering
+\caption{Robustness: Only Category 3 and 4 Banks}
+\label{tab:rob_cat34}
+\small
+\begin{tabular}{l c c c c c}
+\toprule
+ & (1) & (2) & (3) & (4) & (5) \\
+ & Res. Mort. & Tot. Mort. & Oth. Mort. & Non-Mort. & NPL \\
+\midrule
+$\hat{\beta}_1$: CCyB Exp $\times$ Post 2020
+ & 0.980 & -0.103 & -5.714* & 4.842 & 0.121 \\
+ & (1.205) & (0.884) & (3.002) & (4.108) & (0.169) \\[4pt]
+$\hat{\beta}_2$: CCyB Exp $\times$ Post 2022
+ & -1.242 & -1.424** & 0.977 & 2.080 & 0.037 \\
+ & (0.745) & (0.559) & (4.983) & (2.487) & (0.093) \\
+\midrule
+Observations   & 126 & 122 & 122 & 122 & 147 \\
+$R^2$          & 0.321 & 0.435 & 0.251 & 0.420 & 0.798 \\
+Bank FE        & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+Year FE        & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}
+\vspace{4pt}
+\footnotesize
+\textit{Note:} Standard errors clustered at the bank level in
+parentheses. CCyB exposure is standardised (mean 0, SD 1).
+Column~(1): residential mortgage growth (direct CCyB target).
+Column~(2): total mortgage growth.
+Column~(3): other mortgage growth (within-mortgage spillover).
+Column~(4): growth in non-mortgage loans (cross-segment spillover).
+Column~(5): NPL ratio.
+Sample restricted to Category~3 and~4 banks (N\,=\,21), excluding both G-SIBs and D-SIBs.
+* \(p<0.1\), ** \(p<0.05\), *** \(p<0.01\)
+\end{minipage}
+\end{table}

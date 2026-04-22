@@ -1,0 +1,44 @@
+\begin{table}[htbp]
+\centering
+\caption{Main Results: Full Sample and Excluding G-SIBs}
+\label{tab:main_merged}
+\small
+\begin{tabular}{l c c c c c c c c c c}
+\toprule
+ & \multicolumn{5}{c}{Full Sample} & \multicolumn{5}{c}{Excl. G-SIBs} \\
+\cmidrule(lr){2-6}\cmidrule(lr){7-11}
+ & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) & (9) & (10) \\
+ & Res. Mort. & Tot. Mort. & Oth. Mort. & Non-Mort. & NPL & Res. Mort. & Tot. Mort. & Oth. Mort. & Non-Mort. & NPL \\
+\midrule
+$\hat{\beta}_1$
+ & 1.005* & 0.713* & -0.833 & 2.698** & 0.008 & 0.931 & -0.161 & -5.766** & 5.028 & 0.117 \\
+ & (0.534) & (0.367) & (1.277) & (1.213) & (0.053) & (1.097) & (0.805) & (2.761) & (3.833) & (0.160) \\[4pt]
+$\hat{\beta}_2$
+ & 2.335 & 2.299 & 3.335 & 0.505 & 0.034 & -1.227* & -1.380** & 1.059 & 2.050 & 0.041 \\
+ & (1.984) & (2.165) & (3.134) & (1.198) & (0.054) & (0.705) & (0.538) & (4.818) & (2.389) & (0.092) \\
+\midrule
+Observations & 149 & 145 & 145 & 145 & 174 & 138 & 134 & 134 & 134 & 161 \\
+$R^2$ & 0.244 & 0.219 & 0.216 & 0.418 & 0.795 & 0.331 & 0.439 & 0.246 & 0.425 & 0.807 \\
+Bank FE & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+Year FE & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}
+\vspace{4pt}
+\footnotesize
+\textit{Note:} Standard errors clustered at the bank level in
+parentheses. CCyB exposure is standardised (mean 0, SD 1).
+$\hat{\beta}_1$ measures the differential effect of CCyB exposure
+following the March 2020 release.
+$\hat{\beta}_2$ measures the differential effect following the
+September 2022 reactivation.
+Columns~(1)--(5): full sample (N\,=\,25).
+Columns~(6)--(10): excluding G-SIBs (UBS and Credit Suisse).
+Column~(1)/(6): residential mortgage growth.
+Column~(2)/(7): total mortgage growth.
+Column~(3)/(8): other mortgage growth.
+Column~(4)/(9): non-mortgage loan growth.
+Column~(5)/(10): NPL ratio.
+* $p<0.1$, ** $p<0.05$, *** $p<0.01$
+\end{minipage}
+\end{table}

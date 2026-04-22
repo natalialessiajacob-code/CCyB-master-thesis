@@ -1,0 +1,37 @@
+\begin{table}[htbp]
+\centering
+\caption{Robustness: 80th Percentile Dummy --- Full Sample}
+\label{tab:rob_p80_full}
+\small
+\begin{tabular}{l c c c c c}
+\toprule
+ & (1) & (2) & (3) & (4) & (5) \\
+ & Res. Mort. & Tot. Mort. & Oth. Mort. & Non-Mort. & NPL \\
+\midrule
+$\hat{\beta}_1$: High $\times$ Post 2020
+ & 1.438 & 0.987 & -1.821 & 0.369 & 0.127 \\
+ & (1.522) & (1.365) & (3.508) & (5.091) & (0.120) \\[4pt]
+$\hat{\beta}_2$: High $\times$ Post 2022
+ & 1.593 & 1.001 & 1.515 & -1.690 & 0.183 \\
+ & (4.796) & (5.290) & (9.926) & (3.811) & (0.113) \\
+\midrule
+Observations   & 149 & 145 & 145 & 145 & 174 \\
+$R^2$          & 0.191 & 0.173 & 0.213 & 0.411 & 0.801 \\
+Bank FE        & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+Year FE        & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}
+\vspace{4pt}
+\footnotesize
+\textit{Note:} Standard errors clustered at the bank level in
+parentheses. CCyB exposure is standardised (mean 0, SD 1).
+Column~(1): residential mortgage growth (direct CCyB target).
+Column~(2): total mortgage growth.
+Column~(3): other mortgage growth (within-mortgage spillover).
+Column~(4): growth in non-mortgage loans (cross-segment spillover).
+Column~(5): NPL ratio.
+Binary treatment indicator based on 80th percentile split of CCyB exposure. Banks classified as high-exposure for the release (end-2019): UBS Switzerland AG, Migros Bank AG, Bank Cler AG, Raiffeisen Group, Credit Suisse AG. For the reactivation (end-2021): UBS Switzerland AG, Migros Bank AG, Luzerner Kantonalbank AG, Bank Cler AG, Credit Suisse AG. $\hat{\beta}_1$ (High $\times$ Post 2020) and $\hat{\beta}_2$ (High $\times$ Post 2022) capture the differential effect of being in the high-exposure group.
+* \(p<0.1\), ** \(p<0.05\), *** \(p<0.01\)
+\end{minipage}
+\end{table}

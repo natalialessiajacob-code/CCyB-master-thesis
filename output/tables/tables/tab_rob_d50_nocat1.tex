@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+\centering
+\caption{Robustness: Median Dummy --- Excluding G-SIBs}
+\label{tab:rob_d50_nocat1}
+\small
+\begin{tabular}{l c c c c c}
+\toprule
+ & (1) & (2) & (3) & (4) & (5) \\
+ & Res. Mort. & Tot. Mort. & Oth. Mort. & Non-Mort. & NPL \\
+ & \% & \% & \% & \% & \% \\
+\midrule
+$\hat{\beta}_1$: High $\times$ Post 2020
+ & 0.616 & -0.560 & -4.352 & 3.382 & -0.022 \\
+ & (0.840) & (0.576) & (3.137) & (3.918) & (0.160) \\[4pt]
+$\hat{\beta}_2$: High $\times$ Post 2022
+ & -0.726 & -0.891 & 0.742 & 7.653** & -0.147 \\
+ & (0.684) & (0.745) & (3.473) & (3.648) & (0.134) \\
+\midrule
+Observations   & 138 & 134 & 134 & 134 & 161 \\
+$R^2$ (within) & 0.012 & 0.030 & 0.001 & 0.055 & 0.020 \\
+Bank FE        & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+Year FE        & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}
+\vspace{4pt}
+\footnotesize
+\textit{Note:} Standard errors clustered at the bank level in
+parentheses. CCyB exposure is standardised (mean 0, SD 1).
+Column~(1): residential mortgage growth (direct CCyB target).
+Column~(2): total mortgage growth.
+Column~(3): other mortgage growth (within-mortgage spillover).
+Column~(4): growth in non-mortgage loans (cross-segment spillover).
+Column~(5): NPL ratio.
+Binary treatment indicator based on median split of CCyB exposure (12 high, 13 low exposure banks). $\hat{\beta}_1$ (High $\times$ Post 2020) and $\hat{\beta}_2$ (High $\times$ Post 2022) capture the differential effect of being in the high-exposure group.
+Sample excludes Category~1 banks (UBS and Credit Suisse).
+* \(p<0.1\), ** \(p<0.05\), *** \(p<0.01\)
+\end{minipage}
+\end{table}

@@ -1,0 +1,37 @@
+\begin{table}[htbp]
+\centering
+\caption{Robustness: Median Dummy --- Full Sample}
+\label{tab:rob_d50_full}
+\small
+\begin{tabular}{l c c c c c}
+\toprule
+ & (1) & (2) & (3) & (4) & (5) \\
+ & Res. Mort. & Tot. Mort. & Oth. Mort. & Non-Mort. & NPL \\
+\midrule
+$\hat{\beta}_1$: High $\times$ Post 2020
+ & 1.378 & 0.226 & -4.205 & 1.983 & 0.013 \\
+ & (0.968) & (0.904) & (3.083) & (4.514) & (0.159) \\[4pt]
+$\hat{\beta}_2$: High $\times$ Post 2022
+ & 0.342 & 0.092 & 0.377 & 6.048 & -0.101 \\
+ & (2.012) & (2.406) & (4.893) & (3.725) & (0.130) \\
+\midrule
+Observations   & 149 & 145 & 145 & 145 & 174 \\
+$R^2$          & 0.188 & 0.170 & 0.213 & 0.426 & 0.796 \\
+Bank FE        & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+Year FE        & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}
+\vspace{4pt}
+\footnotesize
+\textit{Note:} Standard errors clustered at the bank level in
+parentheses. CCyB exposure is standardised (mean 0, SD 1).
+Column~(1): residential mortgage growth (direct CCyB target).
+Column~(2): total mortgage growth.
+Column~(3): other mortgage growth (within-mortgage spillover).
+Column~(4): growth in non-mortgage loans (cross-segment spillover).
+Column~(5): NPL ratio.
+Binary treatment indicator based on median split of CCyB exposure (12 high, 13 low exposure banks). $\hat{\beta}_1$ (High $\times$ Post 2020) and $\hat{\beta}_2$ (High $\times$ Post 2022) capture the differential effect of being in the high-exposure group.
+* \(p<0.1\), ** \(p<0.05\), *** \(p<0.01\)
+\end{minipage}
+\end{table}
