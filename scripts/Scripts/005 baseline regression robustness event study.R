@@ -569,8 +569,7 @@ write_rob_table(
   col_headers = col_headers_main,
   caption     = "Robustness: Bank-Level Controls --- Full Sample",
   label       = "tab:rob_ctrl_full",
-  filename    = "../tables/tab_rob_ctrl_full.tex",
-  note_extra  = note_ctrl
+  filename    = "../tables/tab_rob_ctrl_full.tex"
 )
 
 write_rob_table(
@@ -580,8 +579,7 @@ write_rob_table(
   caption     = "Robustness: Bank-Level Controls --- Excluding G-SIBs",
   label       = "tab:rob_ctrl_nocat1",
   filename    = "../tables/tab_rob_ctrl_nocat1.tex",
-  note_extra  = paste0(note_ctrl,
-                       "Sample excludes Category~1 banks (UBS and Credit Suisse).\n")
+  note_extra  = "Sample excludes Category~1 banks (UBS and Credit Suisse).\n"
 )
 
 write_rob_table(
@@ -592,8 +590,7 @@ write_rob_table(
   label       = "tab:rob_d50_full",
   filename    = "../tables/tab_rob_d50_full.tex",
   b1_name     = "treat_release_d50",
-  b2_name     = "treat_react_d50",
-  note_extra  = note_d50
+  b2_name     = "treat_react_d50"
 )
 
 write_rob_table(
@@ -605,8 +602,7 @@ write_rob_table(
   filename    = "../tables/tab_rob_d50_nocat1.tex",
   b1_name     = "treat_release_d50",
   b2_name     = "treat_react_d50",
-  note_extra  = paste0(note_d50,
-                       "Sample excludes Category~1 banks (UBS and Credit Suisse).\n")
+  note_extra  = "Sample excludes Category~1 banks (UBS and Credit Suisse).\n"
 )
 
 write_rob_table(
@@ -617,8 +613,7 @@ write_rob_table(
   label       = "tab:rob_p80_full",
   filename    = "../tables/tab_rob_p80_full.tex",
   b1_name     = "treat_release_p80",
-  b2_name     = "treat_react_p80",
-  note_extra  = note_p80_full
+  b2_name     = "treat_react_p80"
 )
 
 write_rob_table(
@@ -629,8 +624,7 @@ write_rob_table(
   label       = "tab:rob_p80_nocat1",
   filename    = "../tables/tab_rob_p80_nocat1.tex",
   b1_name     = "treat_release_p80",
-  b2_name     = "treat_react_p80",
-  note_extra  = note_p80_nocat1
+  b2_name     = "treat_react_p80"
 )
 
 write_rob_table(
@@ -639,6 +633,5 @@ write_rob_table(
   col_headers = col_headers_main,
   caption     = "Robustness: Only Category 3 and 4 Banks",
   label       = "tab:rob_cat34",
-  filename    = "../tables/tab_rob_cat34.tex",
-  note_extra  = note_cat34
+  filename    = "../tables/tab_rob_cat34.tex"
 )
